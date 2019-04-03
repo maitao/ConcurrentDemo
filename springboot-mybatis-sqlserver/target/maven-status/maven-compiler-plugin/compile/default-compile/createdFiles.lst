@@ -1,0 +1,4 @@
+com\didispace\controller\UserController.class
+com\didispace\domain\User.class
+com\didispace\Application.class
+com\didispace\domain\UserMapper.class
