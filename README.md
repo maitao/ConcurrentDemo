@@ -13,29 +13,29 @@ springboot-mybatis-sqlserver 作为多个部署应用</br>
 测试:</br>
 http://localhost/inserValue?userId=</br>
 
-nginx配置
+nginx配置</br>
 upstream maitao{</br>
 		server 192.168.0.103:7007 weight=1;</br>
 		server 192.168.0.103:8008 weight=2;</br>
 	}</br>
   
-location / {
-    proxy_pass http://maitao; 
-    proxy_redirect default; 
-  }
+location / {</br>
+    proxy_pass http://maitao; </br>
+    proxy_redirect default; </br>
+  }</br>
   
-测试结果：（10000,1000）
-SELECT count(*) FROM [dbo].[user] where host = 'localhost:7007' --1160 2654 543 236
-SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 470
+测试结果：（10000,1000）</br>
+SELECT count(*) FROM [dbo].[user] where host = 'localhost:7007' --1160 2654 543 236</br>
+SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 470</br>
 
-模拟请求类如果没有设置允许超时，会有部分出现超时而请求失败。
+模拟请求类如果没有设置允许超时，会有部分出现超时而请求失败。</br>
 
-表结构
-CREATE TABLE [dbo].[user] (
-[name] varchar(255) COLLATE Chinese_PRC_CI_AS NULL ,
-[age] int NULL ,
-[user_id] varchar(50) COLLATE Chinese_PRC_CI_AS NULL ,
-[host] varchar(100) COLLATE Chinese_PRC_CI_AS NULL 
-)
-ON [PRIMARY]
-GO
+表结构</br>
+CREATE TABLE [dbo].[user] (</br>
+[name] varchar(255) COLLATE Chinese_PRC_CI_AS NULL ,</br>
+[age] int NULL ,</br>
+[user_id] varchar(50) COLLATE Chinese_PRC_CI_AS NULL ,</br>
+[host] varchar(100) COLLATE Chinese_PRC_CI_AS NULL </br>
+)</br>
+ON [PRIMARY]</br>
+GO</br>
