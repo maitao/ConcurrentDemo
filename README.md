@@ -1,23 +1,23 @@
 # ConcurrentDemo
 使用springboot、nginx、sqlserver(mysql)做的一个高并发Demo
 
-##20190403
-springboot-module 模拟多用户发送http请求
+##20190403</br>
+springboot-module 模拟多用户发送http请求</br>
 
-springboot-mybatis-sqlserver 作为多个部署应用
-192.168.0.103:7007
-192.168.0.103:8008
+springboot-mybatis-sqlserver 作为多个部署应用</br>
+192.168.0.103:7007</br>
+192.168.0.103:8008</br>
 
-另外需要下载使用nginx做反向代理。
+另外需要下载使用nginx做反向代理。</br>
 
-测试:
-http://localhost/inserValue?userId=
+测试:</br>
+http://localhost/inserValue?userId=</br>
 
 nginx配置
-upstream maitao{
-		server 192.168.0.103:7007 weight=1;
-		server 192.168.0.103:8008 weight=2;
-	}
+upstream maitao{</br>
+		server 192.168.0.103:7007 weight=1;</br>
+		server 192.168.0.103:8008 weight=2;</br>
+	}</br>
   
 location / {
     proxy_pass http://maitao; 
