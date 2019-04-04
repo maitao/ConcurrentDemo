@@ -3,8 +3,7 @@
 
 ##20190403</br>
 springboot-module 模拟多用户发送http请求</br>
-
-springboot-mybatis-sqlserver 作为多个部署应用</br>
+---
 192.168.0.103:7007</br>
 192.168.0.103:8008</br>
 
@@ -30,7 +29,7 @@ SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 
 
 模拟请求类如果没有设置允许超时，会有部分出现超时而请求失败。</br>
 </br>
----
+
 ##表结构</br>
 CREATE TABLE [dbo].[user] (</br>
 [name] varchar(255) COLLATE Chinese_PRC_CI_AS NULL ,</br>
@@ -40,3 +39,9 @@ CREATE TABLE [dbo].[user] (</br>
 )</br>
 ON [PRIMARY]</br>
 GO</br>
+
+springboot-mybatis-sqlserver 作为多个部署应用</br>
+---
+
+springboot-mybatis-mysql redis缓存，redis保存session</br>
+---
