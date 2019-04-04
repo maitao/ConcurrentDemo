@@ -29,6 +29,7 @@ SELECT count(*) FROM [dbo].[user] where host = 'localhost:7007' --1160 2654 543 
 SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 470</br>
 
 模拟请求类如果没有设置允许超时，会有部分出现超时而请求失败。</br>
+</br>
 ---
 ##表结构</br>
 CREATE TABLE [dbo].[user] (</br>
