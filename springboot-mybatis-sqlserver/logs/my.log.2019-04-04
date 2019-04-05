@@ -1,0 +1,23 @@
+2019-04-04 10:22:59,250  INFO ApplicationTests:28 ---- 插入数据
+2019-04-04 10:48:39,713  INFO ApplicationTests:28 ---- 插入数据
+2019-04-04 10:48:39,724  INFO WebLogAspect:48 ---- URL : http://localhost
+2019-04-04 10:48:39,724  INFO WebLogAspect:49 ---- HTTP_METHOD : 
+2019-04-04 10:48:39,725  INFO WebLogAspect:50 ---- IP : 127.0.0.1
+2019-04-04 10:48:39,728  INFO WebLogAspect:51 ---- CLASS_METHOD : com.mt.test.web.domain.UserMapper.insert
+2019-04-04 10:48:39,728  INFO WebLogAspect:53 ---- ARGS : [1, hhh, 20, ]
+2019-04-04 10:48:39,784  INFO WebLogAspect:60 ---- RESPONSE : 1
+2019-04-04 10:48:39,785  INFO WebLogAspect:61 ---- SPEND TIME : 62
+2019-04-04 10:48:39,786  INFO WebLogAspect:48 ---- URL : http://localhost
+2019-04-04 10:48:39,787  INFO WebLogAspect:49 ---- HTTP_METHOD : 
+2019-04-04 10:48:39,787  INFO WebLogAspect:50 ---- IP : 127.0.0.1
+2019-04-04 10:48:39,788  INFO WebLogAspect:51 ---- CLASS_METHOD : com.mt.test.web.domain.UserMapper.insert
+2019-04-04 10:48:39,788  INFO WebLogAspect:53 ---- ARGS : [2, BBB, 20, ]
+2019-04-04 10:48:39,790  INFO WebLogAspect:60 ---- RESPONSE : 1
+2019-04-04 10:48:39,790  INFO WebLogAspect:61 ---- SPEND TIME : 4
+2019-04-04 10:48:39,791  INFO WebLogAspect:48 ---- URL : http://localhost
+2019-04-04 10:48:39,792  INFO WebLogAspect:49 ---- HTTP_METHOD : 
+2019-04-04 10:48:39,793  INFO WebLogAspect:50 ---- IP : 127.0.0.1
+2019-04-04 10:48:39,793  INFO WebLogAspect:51 ---- CLASS_METHOD : com.mt.test.web.domain.UserMapper.insert
+2019-04-04 10:48:39,794  INFO WebLogAspect:53 ---- ARGS : [3, CCC, 0, ]
+2019-04-04 10:48:39,795  INFO WebLogAspect:60 ---- RESPONSE : 1
+2019-04-04 10:48:39,796  INFO WebLogAspect:61 ---- SPEND TIME : 5

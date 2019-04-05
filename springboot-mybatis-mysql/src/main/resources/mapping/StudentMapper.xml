@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mt.demo.web.mapper.StudentMapper" >
+    <resultMap id="baseMap" type="Student">
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="sname" jdbcType="VARCHAR" property="sname" />
+      <result column="sage" jdbcType="INTEGER" property="sage" />
+    </resultMap>
+
+  <select id="selectAll" resultMap="baseMap">
+     SELECT id,sname,sage FROM student LIMIT 0,1000
+  </select>
+</mapper>
