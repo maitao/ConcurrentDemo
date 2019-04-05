@@ -16,7 +16,6 @@ location / {</br>
   }</br>
 </br>
 
-##20190403</br>
 springboot-mybatis-sqlserver 作为多个部署应用，模拟负载均衡</br>
 ---
 192.168.0.103:7007</br>
