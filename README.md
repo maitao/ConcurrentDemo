@@ -15,8 +15,7 @@ location / {</br>
     proxy_redirect default; </br>
   }</br>
 </br>
-</br>
-</br>
+
 ##20190403</br>
 springboot-mybatis-sqlserver 作为多个部署应用，模拟负载均衡</br>
 ---
@@ -31,7 +30,8 @@ CREATE TABLE [dbo].[user] (</br>
 )</br>
 ON [PRIMARY]</br>
 GO</br>
-</br></br></br>
+</br>
+
 springboot-module 模拟多用户发送http请求</br>
 ---
 测试:</br>
@@ -42,7 +42,7 @@ SELECT count(*) FROM [dbo].[user] where host = 'localhost:7007' --1160 2654 543 
 SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 470</br>
 
 模拟请求类如果没有设置允许超时，会有部分出现超时而请求失败。</br>
-</br></br></br>
+</br>
 
 
 springboot-mybatis-mysql redis缓存操作</br>
