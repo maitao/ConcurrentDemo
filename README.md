@@ -46,7 +46,8 @@ SELECT count(*) FROM [dbo].[user] where host = 'localhost:8008' --2318 5309 235 
 
 springboot-mybatis-mysql redis缓存操作</br>
 ---
-使用cache+redis缓存、对List<E>redis存储
+使用cache+redis缓存、对List<E>redis存储</br>
+redis存储乱码问题解决
 </br>
 
 springboot-session redis共享session</br>
